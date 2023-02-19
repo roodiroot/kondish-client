@@ -2,6 +2,15 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## ФАЙЛЫ ДЛЯ ДОБАВЛЕНИЯ В .env
+
+REACT_APP_API_URL=
+REACT_APP_DZEN=
+REACT_APP_WHATSAPP=
+REACT_APP_VK=
+REACT_APP_TG=
+REACT_APP_POLITIC=
+
 ## Available Scripts
 
 In the project directory, you can run:
