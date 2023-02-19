@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import { Link } from "react-router-dom";
+
 import "./style.scss";
 
 function SocialBlock({ type, dz, ws, vk, tg }) {

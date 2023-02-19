@@ -11,7 +11,7 @@ function ListProduct() {
   const dispatch = useDispatch();
   const { products } = useSelector((state) => state.productReducer);
   const [page, setPage] = useState(1);
-  const [limit, setLimit] = useState(10);
+  const [limit, setLimit] = useState(15);
   const [refresh, setRefresh] = useState(false);
 
   const filters = {

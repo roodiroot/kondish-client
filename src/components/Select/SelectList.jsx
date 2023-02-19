@@ -4,7 +4,6 @@ function SelectList({ setShowList, selectRef, setValue, list }) {
   const listRef = useRef();
 
   const clickClose = (e) => {
-    let n = 0;
     const path = e.composedPath();
     if (!path.includes(listRef.current) && !path.includes(selectRef.current)) {
       setShowList(false);

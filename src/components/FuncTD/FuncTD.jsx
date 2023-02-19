@@ -1,5 +1,4 @@
 import React from "react";
-import { deletOneProductAPI } from "../../http/productAPI";
 import SVGCombine from "../SVG/SVGCombine/SVGCombine";
 
 function FuncTD({ id, drop }) {

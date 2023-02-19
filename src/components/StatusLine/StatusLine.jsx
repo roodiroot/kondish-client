@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import { useState } from "react";
+
 import "./statusLine.scss";
 
 function StatusLine({ ok, setOk, error, setError }) {

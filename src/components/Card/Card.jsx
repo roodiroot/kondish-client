@@ -1,5 +1,4 @@
 import "./style.scss";
-import Button from "../Button/Button";
 import { Link } from "react-router-dom";
 import Picture from "../Picture/Picture";
 

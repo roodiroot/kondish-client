@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import { useState } from "react";
+
 import "./style.scss";
 
 function TitleModal({ children, style, h1, h2, h3 }) {
