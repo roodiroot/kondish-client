@@ -1,0 +1,17 @@
+.modal__header {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.1em;
+    color: #14233D;
+
+    &.h1 {
+        font-size: 1.75rem;
+    }
+    &.h2 {
+        font-size: 1.5rem;
+    }
+    &.h3 {
+        font-size: 1.2rem;
+    }
+}

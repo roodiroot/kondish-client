@@ -1,0 +1,35 @@
+.elementGalery {
+    width: 100%;
+    max-width: 380px;
+    overflow: hidden;
+    /* .elementGalery__image */
+
+    &__image {
+        overflow: hidden;
+        width: 100%;
+        height: 245px;
+
+        border-radius: 10px;
+        margin-bottom: 1.4rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+    }
+
+    /* .elementGalery__description */
+    &__date {
+        color: #FFA921;
+    }
+
+    &__description {
+        font-weight: 400;
+        font-size: .9rem;
+        line-height: 136%;
+        color: #191919;
+
+        
+    }
+}

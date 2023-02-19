@@ -1,0 +1,76 @@
+$fontColor: #666666;
+
+.paginator {
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+
+    .arrowPagination {
+      cursor: pointer;
+      display: inline-block;
+      width: 1.8rem;
+      height: 2rem;
+      border-radius: 0.75rem;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid $fontColor;
+      color: $fontColor;
+      font-size: 1.5rem;
+      font-weight: 500;
+
+      &.back {
+        margin-right: 0.3rem;
+      }
+      &.prev {
+        margin-left: 0.3rem;
+      }
+    }
+    .dotdotdot {
+      color: $fontColor;
+      width: 1rem;
+      height: 2rem;
+      text-align: center;
+      line-height: 2rem;
+    }
+  }
+  &__link {
+    cursor: pointer;
+    display: inline-block;
+    width: 1.5rem;
+    height: 2rem;
+    border-radius: 0.75rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // border: 2px solid #ffa921;
+    span {
+      color: $fontColor;
+      font-weight: 500;
+    }
+
+    &.active {
+      background: $fontColor;
+      width: 2rem;
+      span {
+        color: #fff;
+      }
+    }
+  }
+
+  &__linkSt {
+    cursor: pointer;
+    padding: 0.2rem;
+    &.activeSt {
+      text-decoration: underline;
+    }
+  }
+}

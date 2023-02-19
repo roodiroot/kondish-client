@@ -1,0 +1,64 @@
+// ИКОНКИ СОЦСЕТЕЙ
+.socialBlockFooter,
+.socialBlockMain,
+.socialBlockSmall {
+  display: inline-block;
+  color: rgb(246, 246, 246);
+  &__list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .ws {
+      background: #29a71a;
+    }
+    .vk {
+      background: #0077ff;
+    }
+    .tg {
+      background: #229ed9;
+    }
+  }
+  &__link {
+    display: inline-block;
+    position: relative;
+
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+.socialBlockFooter {
+  font-size: 1.6rem;
+  &__list {
+    gap: 0.2rem;
+    align-items: center;
+    .dz {
+      font-size: 2.95rem;
+    }
+  }
+  &__link {
+    width: 2.9rem;
+    height: 2.9rem;
+    border-radius: 0.625rem;
+  }
+}
+.socialBlockMain {
+  font-size: 29px;
+  &__list {
+    gap: 2px;
+    .dz {
+      font-size: 49px;
+      color: #171717;
+    }
+  }
+  &__link {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+  }
+}

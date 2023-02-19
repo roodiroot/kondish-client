@@ -1,0 +1,21 @@
+.loginPage {
+  overflow: hidden;
+
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+
+  position: relative;
+  padding: 3rem 2rem;
+  border: 1px solid #dde3eb;
+  background: #fff;
+  border-radius: 20px;
+
+  margin-bottom: 4rem;
+
+  &__body {
+  }
+  .inputsBlock {
+    margin-bottom: 1.5rem;
+  }
+}

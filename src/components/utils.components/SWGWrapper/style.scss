@@ -1,0 +1,14 @@
+.cartIcon {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  border: #ffa921 2px solid;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}

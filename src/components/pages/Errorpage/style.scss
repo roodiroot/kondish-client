@@ -1,0 +1,52 @@
+.error {
+    width: 100%;
+    height: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    transform: translateY(-4rem);
+
+    /* .error__404 */
+
+    &__404 {
+        font-weight: 500;
+        font-size: 13rem;
+        line-height: .9em;
+        text-align: center;
+        color: #424242;
+
+        margin-bottom: 1.5rem;
+
+        @media (max-width: 400px) {
+            font-size: 10rem;
+        }
+        @media (max-width: 370px) {
+            font-size: 7rem;
+        }
+    }
+
+    /* .error__notFound */
+
+    &__notFound {
+        font-weight: 500;
+        font-size: 1.1rem;
+        line-height: 1.2em;
+        text-align: center;
+        color: #424242;
+
+        margin-bottom: 2.5rem;
+    }
+
+    /* .error__button */
+
+    &__button {
+        margin: 0 auto;
+        max-width: 300px;
+    }
+}
+.buttonMain {
+}

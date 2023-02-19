@@ -1,0 +1,56 @@
+.delivery {
+    overflow: hidden;
+
+    position: relative;
+    padding: 3rem 2rem;
+    // border: 1px solid #DDE3EB;
+    background: #ffffff;
+    border-radius: 20px;
+
+    margin-bottom: 3rem;
+
+    /* .delivery__blockHeader */
+
+    &__blockHeader {
+        margin-bottom: 3rem;
+    }
+
+    /* .delivery__body */
+
+    &__body {
+    }
+
+    /* .delivery__paragraf */
+
+    &__paragraf {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+
+        margin-bottom: 2.3rem;
+    }
+
+    /* .delivery__item */
+
+    &__item {
+        color: #FFA921;
+        font-size: 1.25rem;
+        line-height: 120%;
+    }
+
+    /* .delivery__text */
+
+    &__text {
+        font-weight: 600;
+        font-size: 1.15;
+        line-height: 187.9%;
+        letter-spacing: 0.005em;
+        color: #171717;
+    }
+
+    /* .delivery__button */
+
+    &__button {
+        max-width: 300px;
+    }
+}

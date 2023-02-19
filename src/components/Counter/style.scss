@@ -1,0 +1,90 @@
+.counterItems {
+    width: 7.75rem;
+    height: 3.75rem;
+
+    background: #FFFFFF;
+    border: 1px solid #DDE3EB;
+    border-radius: 0.625rem;
+
+    display: flex;
+
+    padding: 0.3125rem;
+
+    overflow: hidden;
+
+    /* .counterItems__dicriment */
+
+    &__dicriment, &__incriment {
+        cursor: pointer;
+
+        height: 100%;
+        flex: 1 1 auto;
+
+        position: relative;
+
+        font-size: 1.75rem;
+        color: #7c7c7c;
+
+        transition: all .2s linear;
+        
+
+        &::after {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+
+        &:hover {
+            background: #f0f0f1;;
+        }
+    }
+
+    &__dicriment {
+        border-radius: 0.3125rem 0 0 0.3125rem;
+        &::after {
+            content: '-';
+        }
+    }
+
+    /* .counterItems__number */
+
+    &__number {
+        flex: 0 0 3.187rem;
+
+        font-weight: 400;
+        font-size: 1.56rem;
+        line-height: 3.375rem;
+        letter-spacing: 0.005em;
+        text-transform: uppercase;
+        color: #7c7c7c;
+
+        text-align: center;
+
+        input {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    /* .counterItems__incriment */
+
+    &__incriment {
+        border-radius: 0 0.3125rem 0.3125rem 0;
+        &::after {
+            content: '+';
+        }
+    }
+    &.min {
+        width: 6rem;
+        height: 2.75rem;
+        border-radius: 0.2rem;
+        padding: 0.3125rem;
+
+        .counterItems__number {
+            font-size: 1.3rem;
+            line-height: 2.175rem;
+        }
+    }
+}

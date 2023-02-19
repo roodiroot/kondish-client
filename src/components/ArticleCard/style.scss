@@ -1,0 +1,46 @@
+.articleElement {
+    padding: .5rem 0 .5rem;
+
+    /* .articleElement__title */
+
+    &__title {
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.3em;
+        color: #1b1b1b;
+
+        margin-bottom: 1em;
+    }
+
+    /* .articleElement__description */
+
+    &__description {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.75em;
+
+        margin-bottom: 0.7rem;
+
+         p {
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;  
+            overflow: hidden;
+          }
+    }
+
+    /* .articleElement__all */
+
+    &__all {
+        cursor: pointer;
+        font-weight: 500;
+        font-size: .9rem;
+        line-height: 1.5em;
+        text-transform: uppercase;
+         color: #FFA921;
+
+         &:hover {
+            text-decoration: underline;
+         }
+    }
+}

@@ -1,0 +1,41 @@
+.cartIcon {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  border: #ffa921 2px solid;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  &__iconElement {
+    color: #ffa921;
+  }
+  &__count {
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: rgb(230, 78, 78);
+    transform: translate(-50%, -50%);
+
+    span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      font-size: 11px;
+      color: #ffffff;
+      font-weight: 500;
+    }
+  }
+}

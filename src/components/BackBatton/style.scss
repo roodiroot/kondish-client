@@ -1,0 +1,41 @@
+.backbutton {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+   &.row {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+.cardItem__topRow {
+
+    margin-bottom: 1rem;
+
+    .cardItem__back {
+        color: #afafaf;
+        margin-bottom: 1.1rem;
+
+        span {
+            text-decoration: underline;
+        }
+
+    }
+}
+
+.cardItem__allProduct {
+    // margin-top: 3rem;
+    cursor: pointer;
+    // height: 3.75rem;
+
+    font-weight: 500;
+    font-size: 0.875rem;
+    // line-height: 3.375rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFA921;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,29 @@
+.block {
+  overflow: hidden;
+  width: 100%;
+  max-width: 500px;
+  min-height: 474px;
+  margin: 0 auto 3rem;
+  position: relative;
+  padding: 3rem 2rem;
+  border: 1px solid #dde3eb;
+  background: #fff;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__table {
+    width: 100%;
+    font-size: 10px;
+
+    tr:nth-child(2n) {
+      background: #dddddd;
+    }
+
+    td {
+      padding: 10px;
+    }
+  }
+}

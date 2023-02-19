@@ -1,0 +1,350 @@
+
+
+.cart {
+    overflow: hidden;
+
+    position: relative;
+    padding: 3rem 2rem;
+    background: #ffffff;
+    border: 1px solid #DDE3EB;
+    border-radius: 20px;
+    
+
+        &__back {
+            margin-bottom: 1.2rem;
+            cursor: pointer;
+            // height: 3.75rem;
+    
+            font-weight: 500;
+            font-size: 0.875rem;
+            // line-height: 3.375rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #FFA921;
+        
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+		/* .cart__blockHeader */
+
+		&__blockHeader {
+		}
+
+        &__subtitle {
+            margin-bottom: 1rem;
+        }
+
+		/* .cart__billing */
+
+		&__billing {
+
+		}
+
+		/* .cart__additional */
+
+		&__additional {
+		}
+
+		/* .cart__addServices */
+
+		&__addServices {
+            padding: .3rem .5rem .3rem 0;
+            margin-bottom: 2rem;
+		}
+
+		/* .cart__technicalBlock */
+
+		&__technicalBlock {
+		}
+
+        .cartDefault {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            padding: 5rem;
+        }
+}
+.blockHeader {
+
+		/* .blockHeader__title */
+
+		&__title {
+		}
+}
+.billingBlock {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+
+    margin-bottom: 2rem;
+
+@media (max-width: 1000px) {
+    flex-direction: column;
+}
+
+        &__wrapper {
+            flex: 1 1 auto;
+        }
+
+		/* .billingBlock__checkBlock */
+
+		&__checkBlock {
+            flex: 0 1 388px;
+            max-width: 500px;
+		}
+
+		/* .billingBlock__title */
+
+		&__title {
+            color: #afafaf;
+            margin-bottom: 1.1rem;
+
+            span {
+                text-decoration: underline;
+            }
+		}
+		&__title.titleNo {
+            color: #ffffff00;
+		}
+
+		/* .billingBlock__paymentBlock */
+
+		&__paymentBlock {
+            padding: 3.125rem 0;
+            border-bottom: 1px solid #DDE3EB;
+            border-top: 1px solid #DDE3EB;
+
+            margin-bottom:  2rem;
+
+            @media (max-width: 1000px) {
+                padding: 2.4rem 0;
+            }
+
+		}
+
+		/* .billingBlock__payRow */
+
+		&__payRow {
+            font-weight: 500;
+            font-size: 1rem;
+            line-height: 1.25rem;
+            color: #000000;
+
+            display: flex;
+            justify-content: space-between;
+
+            margin-bottom: .92rem;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+		}
+
+		/* .billingBlock__key */
+
+		&__key {
+		}
+
+		/* .billingBlock__meaning */
+
+		&__meaning.total {
+            @media (max-width: 380px) {
+                font-size: 1.4rem;
+            }
+		}
+
+		/* .billingBlock__totalBlock */
+
+		&__totalBlock {
+		}
+        .totalRow {
+            font-weight: 500;
+            font-size: 1.11;
+            text-transform: uppercase;
+            line-height: 22px;
+            margin-bottom: 1.5rem;
+        }
+
+		/* .billingBlock__button */
+
+		&__button {
+            margin-bottom: 1rem;
+		}
+
+		/* .billingBlock__warning */
+
+		&__warning {
+            font-size: .9rem;
+            padding: .5rem 1rem;
+		}
+}
+.productsBlock {
+    display: flex;
+    // justify-content: space-between;
+    flex-direction: column;
+
+    width: 100%;
+    border-top: 1px solid #DDE3EB;
+
+		/* .productsBlock__element */
+
+		&__element {
+            display: flex;
+            justify-content: space-between;
+            gap: .7rem;
+            padding: 3.125rem 0;
+
+            font-weight: 400;
+            line-height: 132.9%;
+            letter-spacing: 0.035em;
+            color: #171717;
+
+            border-bottom: 1px solid #DDE3EB;
+
+            @media (max-width: 1000px) {
+                padding: 2.4rem 0;
+            }
+
+		}
+        &__main {
+            display: flex;
+        }
+
+		/* .productsBlock__photo */
+
+		&__photo {
+            overflow: hidden;
+
+            width: 14.68rem;
+            min-width: 14rem;
+            height: 10.625rem;
+
+            background: #FFFFFF;
+            border: 1px solid #DDE3EB;
+            border-radius: 10px;
+
+            margin-right: 1.43rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+            @media (max-width: 700px) {
+                display: none;
+            }
+		}
+
+		/* .productsBlock__infoBlock */
+
+		&__infoBlock {
+            max-width: 11.6rem;
+		}
+
+		/* .productsBlock__name */
+
+		&__name {
+            cursor: pointer;
+            font-weight: 500;
+            margin-bottom: .5rem;
+
+            &:hover {
+                text-decoration: underline;
+            }
+		}
+
+		/* .productsBlock__description */
+
+		&__description {
+            min-height: 2rem;
+            margin-bottom: 0.5rem;
+
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;  
+            overflow: hidden;
+		}
+
+		/* .productsBlock__price */
+
+		&__price {
+		}
+
+        &__countAndSumm {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            gap: .7rem;
+
+            @media (max-width: 380px) {
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-end;
+            }
+        }
+
+		/* .productsBlock__counter */
+
+		&__counter {
+		}
+
+		/* .productsBlock__summ */
+
+		&__summ {
+            white-space: nowrap;
+            font-weight: 500;
+
+            @media (max-width: 380px) {
+                font-size: 1.3rem;
+            }
+		}
+
+		/* .productsBlock__delete */
+
+		&__delete {
+            
+            span {
+                cursor: pointer;
+                padding: 1px 1px 5px 5px;
+            }
+
+		}
+}
+
+
+.technicalBlock {
+    // font-size: 0.9rem;
+
+		/* .technicalBlock__row */
+
+		&__row {
+            cursor: pointer;
+
+            display: flex;
+            align-items: center;
+            gap: .8rem;
+
+            margin-bottom: 0.9rem;
+            &:hover {
+                .technicalBlock__text {
+                    text-decoration: underline;
+                }
+            }
+		}
+
+		/* .technicalBlock__icon */
+
+		&__icon {
+		}
+
+		/* .technicalBlock__text */
+
+		&__text {
+            &:hover {
+                text-decoration: underline;
+            }
+		}
+}
