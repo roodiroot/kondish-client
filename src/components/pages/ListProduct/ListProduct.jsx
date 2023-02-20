@@ -11,7 +11,7 @@ function ListProduct() {
   const dispatch = useDispatch();
   const { products } = useSelector((state) => state.productReducer);
   const [page, setPage] = useState(1);
-  const [limit, setLimit] = useState(15);
+  const [limit, setLimit] = useState(10);
   const [refresh, setRefresh] = useState(false);
 
   const filters = {
@@ -43,6 +43,8 @@ function ListProduct() {
             <td>Название</td>
             <td>Артикул</td>
             <td>Цена</td>
+            <td>Инвертор</td>
+            <td>HIT</td>
             <td></td>
           </tr>
           {products?.count > 0 &&
@@ -52,6 +54,8 @@ function ListProduct() {
                 <td>{l.name}</td>
                 <td>{l.vendor_code}</td>
                 <td>{l.price}</td>
+                <td>{l.compressor}</td>
+                <td>{l.hit}</td>
                 <td>
                   <FuncTD drop={dropElement} id={l.id} />
                 </td>
@@ -64,7 +68,7 @@ function ListProduct() {
         page={page}
         setPage={setPage}
         limit={limit}
-        type="standart"
+        classic
       />
     </div>
   );

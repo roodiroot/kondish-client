@@ -46,30 +46,31 @@ function Paginator({ count, page, setPage, limit, classic }) {
   return (
     <div className="paginator__wrapper">
       <ul className="paginator__list">
-        <li onClick={bascPage} className="arrowPagination back">
+        <li
+          onClick={bascPage}
+          className={classNames("arrowPagination back", { classic })}
+        >
           <SVGCombine leftArr />
         </li>
         {!firstPage && (
           <>
             <li
-              className={classNames(
-                !classic && "paginator__link",
-                page === 1 && "active"
-              )}
+              className={classNames("paginator__link", page === 1 && "active", {
+                classic,
+              })}
               onClick={(e) => setPage(1)}
             >
               <span>{1}</span>
             </li>
-            <span className="dotdotdot">...</span>
+            <span className={classNames("dotdotdot", { classic })}>...</span>
           </>
         )}
         {paginArr.map((i, index) => (
           <li
             key={`${i}_${index}`}
-            className={classNames(
-              !classic && "paginator__link",
-              page === i && "active"
-            )}
+            className={classNames("paginator__link", page === i && "active", {
+              classic,
+            })}
             onClick={(e) => setPage(i)}
           >
             <span>{i}</span>
@@ -77,11 +78,12 @@ function Paginator({ count, page, setPage, limit, classic }) {
         ))}
         {!lastPage && (
           <>
-            <span className="dotdotdot">...</span>
+            <span className={classNames("dotdotdot", { classic })}>...</span>
             <li
               className={classNames(
                 "paginator__link",
-                page === arr.length && "active"
+                page === arr.length && "active",
+                { classic }
               )}
               onClick={(e) => setPage(arr.length)}
             >
@@ -89,7 +91,10 @@ function Paginator({ count, page, setPage, limit, classic }) {
             </li>
           </>
         )}
-        <li onClick={prewPage} className="arrowPagination prev">
+        <li
+          onClick={prewPage}
+          className={classNames("arrowPagination prev", { classic })}
+        >
           <SVGCombine rightArr />
         </li>
       </ul>

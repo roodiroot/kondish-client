@@ -32,6 +32,11 @@ $fontColor: #666666;
       &.prev {
         margin-left: 0.3rem;
       }
+
+      &.classic {
+        border: unset;
+        height: 1.5rem;
+      }
     }
     .dotdotdot {
       color: $fontColor;
@@ -39,6 +44,11 @@ $fontColor: #666666;
       height: 2rem;
       text-align: center;
       line-height: 2rem;
+
+      &.classic {
+        font-size: 0.8rem;
+        height: 1.5rem;
+      }
     }
   }
   &__link {
@@ -62,6 +72,26 @@ $fontColor: #666666;
       width: 2rem;
       span {
         color: #fff;
+      }
+    }
+
+    &.classic {
+      font-size: 0.8rem;
+      width: 1.2rem;
+      height: 1.5rem;
+
+      span {
+        color: $fontColor;
+        font-weight: 400;
+      }
+
+      &.active {
+        background: none;
+        width: 1.2rem;
+        text-decoration: underline;
+        span {
+          color: #000000;
+        }
       }
     }
   }

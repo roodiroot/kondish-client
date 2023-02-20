@@ -59,6 +59,7 @@ export const SesList = [
   20, 21, 22, 23, 24, 25, 27, 32, 35, 36, 40, 41, 50, 53, 61, 70,
 ];
 export const wifiLIst = ["да", "нет"];
+export const compressorLIst = ["Инвертор", "не инвертор"];
 
 export const titleButton = [
   {

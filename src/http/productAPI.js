@@ -9,6 +9,8 @@ export const getProductAPI = async (filters) => {
       S: filters.S,
       WiFi: filters.WiFi,
       hit: filters.hit,
+      compressor: filters.compressor,
+      external: filters.external,
       minPrice: filters.minPrice,
       maxPrice: filters.maxPrice,
     },

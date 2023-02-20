@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 import { fetchProducts } from "../../../store/reducers/ActionCreators";
-import { brandsList, SesList, wifiLIst } from "../../../utils";
+import { brandsList, SesList, wifiLIst, compressorLIst } from "../../../utils";
 import Card from "../../Card/Card";
 import Paginator from "../../Paginator/Paginator";
 import FiltersBlock from "./FiltersBlock";
@@ -19,6 +19,11 @@ function Shoppage() {
   const [minPrice, setMinPrice] = useState(1);
   const [maxPrice, setMaxPrice] = useState(100000);
   const [WiFi, setWiFi] = useState(null);
+
+  const [hit, setHit] = useState(null);
+  const [external, setExternal] = useState(null);
+  const [compressor, setCompressor] = useState(null);
+
   const [page, setPage] = useState(1);
   const [limit, setLimit] = useState(8);
 
@@ -30,7 +35,9 @@ function Shoppage() {
     brand,
     S,
     WiFi,
-    hit: false,
+    hit,
+    external,
+    compressor,
     minPrice,
     maxPrice,
   };
@@ -53,6 +60,9 @@ function Shoppage() {
     setMinPrice(1);
     setMaxPrice(100000);
     setWiFi(null);
+    setHit(null);
+    setExternal(null);
+    setCompressor(null);
   };
   const props = {
     minPrice,
@@ -68,6 +78,13 @@ function Shoppage() {
     wifiLIst,
     WiFi,
     setWiFi,
+    hit,
+    setHit,
+    compressor,
+    setCompressor,
+    external,
+    setExternal,
+    compressorLIst,
     showProducts,
     showAll,
   };
