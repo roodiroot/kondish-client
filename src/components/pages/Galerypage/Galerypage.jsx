@@ -18,6 +18,7 @@ import Loader from "../../Loader/Loader";
 
 function Galerypage() {
   const { gallery, isLoading } = useSelector((state) => state.galleryReducer);
+
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(

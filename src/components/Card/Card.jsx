@@ -5,7 +5,9 @@ import Picture from "../Picture/Picture";
 function Card({ element }) {
   let price;
   price =
-    `${element?.price}`.slice(0, -3) + " " + `${element?.price}`.slice(-4, -1);
+    `${element?.price}`.slice(0, -3) +
+    " " +
+    `${element?.price}`.slice(-3, `${element?.price}`.length);
 
   return (
     <div className="cardItemShop">

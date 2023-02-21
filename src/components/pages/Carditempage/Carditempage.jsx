@@ -68,26 +68,12 @@ function Carditempage() {
               <PhotoSlider imgArray={oneProduct.img_array} />
               <div className="mainRowCardItem__billingBlock">
                 <div className="mainRowCardItem__headerBlock">
-                  <UpdateRow
-                    bool={updadeMasterTrue()}
-                    value={oneProduct.name}
-                    name="name"
-                    id={oneProduct.id}
-                  >
-                    <div className="mainRowCardItem__title">
-                      {oneProduct?.name}
-                    </div>
-                  </UpdateRow>
-                  <UpdateRow
-                    bool={updadeMasterTrue()}
-                    value={oneProduct?.description}
-                    name="description"
-                    id={oneProduct.id}
-                  >
-                    <div className="mainRowCardItem__subTitle">
-                      {oneProduct?.description}
-                    </div>
-                  </UpdateRow>
+                  <div className="mainRowCardItem__title">
+                    {oneProduct?.name}
+                  </div>
+                  <div className="mainRowCardItem__subTitle">
+                    {oneProduct?.description}
+                  </div>
                 </div>
                 <div className="mainRowCardItem__tableCardItem tableCardItem">
                   <div className="tableCardItem__title">описание</div>
