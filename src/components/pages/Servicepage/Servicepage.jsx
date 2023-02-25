@@ -44,28 +44,28 @@ function Servicepage() {
                         <tbody>
                             <tr className="service__rowHeader">
                                 <th className="service__header">Услуга</th>
-                                <th className="service__header">Модель по объему помещения</th>
+                                <th className="service__header">Модели</th>
                                 <th className="service__header">Стоимость работ</th>
                             </tr>
                             <tr className="service__row">
-                                <td className="service__section">Монтаж до 5 метров кондиционера</td>
-                                <td className="service__section">модель 07-09</td>
+                                <td className="service__section">Монтаж до 5м.</td>
+                                <td className="service__section">07-09</td>
                                 <td className="service__section">15 000 ₽</td>
                             </tr>
                             <tr className="service__row">
-                                <td className="service__section">Монтаж до 5 метров кондиционера</td>
-                                <td className="service__section">модель 07-09</td>
-                                <td className="service__section">15 000 ₽</td>
+                                <td className="service__section">Монтаж до 5м.</td>
+                                <td className="service__section">12</td>
+                                <td className="service__section">16 000 ₽</td>
                             </tr>
                             <tr className="service__row">
-                                <td className="service__section">Монтаж до 5 метров кондиционера</td>
-                                <td className="service__section">модель 07-09</td>
-                                <td className="service__section">15 000 ₽</td>
+                                <td className="service__section">Монтаж до 5м.</td>
+                                <td className="service__section">18</td>
+                                <td className="service__section">17 000 ₽</td>
                             </tr>
                             <tr className="service__row">
-                                <td className="service__section">Монтаж до 5 метров кондиционера</td>
-                                <td className="service__section">модель 07-09</td>
-                                <td className="service__section">15 000 ₽</td>
+                                <td className="service__section">Монтаж до 5м.</td>
+                                <td className="service__section">24</td>
+                                <td className="service__section">20 000 ₽</td>
                             </tr>
                         </tbody>
                     </table>
@@ -77,11 +77,11 @@ function Servicepage() {
                             </tr>
                             <tr className="service__row">
                                 <td className="service__section">Штробление бетона</td>
-                                <td className="service__section">2 500 ₽ погонный метр</td>
+                                <td className="service__section">2 500 ₽ пог. метр</td>
                             </tr>
                             <tr className="service__row">
                                 <td className="service__section">Штробление кирпич-пеноблок</td>
-                                <td className="service__section">1 000 ₽ погонный метр</td>
+                                <td className="service__section">1 000 ₽ пог. метр</td>
                             </tr>
                             <tr className="service__row">
                                 <td className="service__section">Дополнительная трасса после 5 метров</td>
@@ -96,16 +96,16 @@ function Servicepage() {
                                 <td className="service__section">2 000 ₽</td>
                             </tr>
                             <tr className="service__row">
-                                <td className="service__section">Работа с лестницы до 4 м</td>
-                                <td className="service__section">2 000 ₽</td>
+                                <td className="service__section">Работа с лестницы до 5 м</td>
+                                <td className="service__section">3 000 ₽</td>
                             </tr>
                             <tr className="service__row">
-                                <td className="service__section">Работа с лестницы до 4 м</td>
-                                <td className="service__section">2 000 ₽</td>
+                                <td className="service__section">Работа с лестницы до 6 м</td>
+                                <td className="service__section">4 000 ₽</td>
                             </tr>
                             <tr className="service__row">
-                                <td className="service__section">Работа с лестницы до 4 м</td>
-                                <td className="service__section">2 000 ₽</td>
+                                <td className="service__section">Работа с лестницы до 10 м</td>
+                                <td className="service__section">6 000 ₽</td>
                             </tr>
                             <tr className="service__row">
                                 <td className="service__section">Услуга автовышки и монтаж на вентилируемый фасад</td>
