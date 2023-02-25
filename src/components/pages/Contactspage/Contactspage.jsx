@@ -9,8 +9,11 @@ import Input from "../../Input/Input";
 import BackBatton from "../../BackBatton/BackBatton";
 import MapComponent from "../../Map/Map";
 import { sendMessageAPI } from "../../../http/sendMessageAPI";
+import { notificationSlice } from "../../../store/reducers/NotificationSlice";
+import { useDispatch } from "react-redux";
 
 function Contactspage() {
+  const dispatch = useDispatch();
   const [name, setName] = useState("");
   const [number, setNumber] = useState("");
   const [personal, setPersonal] = useState(false);
@@ -25,11 +28,13 @@ function Contactspage() {
         "Вы должны согласиться с политикой по обработке персональных данных"
       );
     const TOTAL = `Обратная связь с сайта Имя: ${name} Номер телефона: ${number} отправлено с формы обратной связи со страницы контакты`;
-    sendMessageAPI(TOTAL).then((d) => console.log(d));
+    sendMessageAPI(TOTAL).then((d) =>
+      dispatch(notificationSlice.actions.dindon("Ожидайте звонка..."))
+    );
     setName("");
     setNumber("");
     setPersonal(false);
-    return alert("Данные успешно отправлены. Ожидайте ответа специалиста");
+    return;
   };
   return (
     <div className="contacts">
@@ -41,7 +46,11 @@ function Contactspage() {
         <div className="contacts__contactsBlock">
           <div className="contacts__infoBlock">
             <div className="contacts_info">
-              <RowContacts tel name="Номер телефона:" value="+7 915 329 42 09" />
+              <RowContacts
+                tel
+                name="Номер телефона:"
+                value="+7 915 329 42 09"
+              />
               <RowContacts name="E-mail:" value="info@kondish.su" />
               <RowContacts
                 name="Адрес сервисного цента:"
@@ -74,12 +83,8 @@ function Contactspage() {
               type="text"
             />
             <div className="infoRow__service serviceBlock">
-              <CheckIcon
-                value={personal}
-                setValue={setPersonal}
-                href="(персональных данных)"
-              >
-                Согласие на обработку{" "}
+              <CheckIcon value={personal} setValue={setPersonal}>
+                Согласие на обработку данных
               </CheckIcon>
             </div>
             <div className="infoRow__button">

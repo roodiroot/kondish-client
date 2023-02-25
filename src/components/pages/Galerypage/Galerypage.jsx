@@ -15,6 +15,7 @@ import ModalBody from "../../Modal/ModalBody";
 import SocialBlock from "../../SocialBlock/SocialBlock";
 import { sendMessageAPI } from "../../../http/sendMessageAPI";
 import Loader from "../../Loader/Loader";
+import { notificationSlice } from "../../../store/reducers/NotificationSlice";
 
 function Galerypage() {
   const { gallery, isLoading } = useSelector((state) => state.galleryReducer);
@@ -49,7 +50,9 @@ function Galerypage() {
         "Вы должны согласиться с политикой по обработке персональных данных"
       );
     const TOTAL = `Обратная связь с сайта Имя: ${name} Номер телефона: ${number} отправлено со страницы ${pathname}`;
-    sendMessageAPI(TOTAL).then((d) => alert(d.message));
+    sendMessageAPI(TOTAL).then((d) =>
+      dispatch(notificationSlice.actions.dindon("Ожидайте звонка..."))
+    );
     setName("");
     setNumber("");
     setPersonal(false);

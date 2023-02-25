@@ -1,17 +1,20 @@
 import { useState } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Outlet } from "react-router-dom";
 import { sendMessageAPI } from "../http/sendMessageAPI";
+import { notificationSlice } from "../store/reducers/NotificationSlice";
 
 import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
 import Loader from "./Loader/Loader";
 import Modal from "./Modal/Modal";
 import ModalBody from "./Modal/ModalBody";
+import Notification from "./Notification/Notification";
 import ScrollToTop from "./ScrollToTop/ScrollToTop";
 import TreeAngel from "./TreeAngle/TreeAngel";
 
 function Layout() {
+  const dispatch = useDispatch();
   const { bascetReducer, userReducer } = useSelector((state) => state);
 
   const [modal, setModal] = useState(false);
@@ -33,7 +36,9 @@ function Layout() {
         "Вы должны согласиться с политикой по обработке персональных данных"
       );
     const TOTAL = `Обратная связь с сайта Имя: ${name} Номер телефона: ${number} отправлено с HEADER`;
-    sendMessageAPI(TOTAL).then((d) => alert(d));
+    sendMessageAPI(TOTAL).then((d) => {
+      dispatch(notificationSlice.actions.dindon("Ожидайте звонка..."));
+    });
     setName("");
     setNumber("");
     setPersonal(false);
@@ -63,6 +68,7 @@ function Layout() {
           onClick={sendMessage}
         />
       </Modal>
+      <Notification />
     </>
   );
 }

@@ -20,7 +20,7 @@ function ModalBody({ checkValue, setCheckValue, input, onClick, h1, h2, h3 }) {
         />
       ))}
       <CheckIcon value={checkValue} setValue={setCheckValue}>
-        Согласие на обработку персональных данных
+        Согласие на обработку данных
       </CheckIcon>
       <Button onClick={onClick}>Отправить</Button>
     </>
