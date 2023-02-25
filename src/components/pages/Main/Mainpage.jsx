@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom'
 import { sendMessageAPI } from '../../../http/sendMessageAPI'
 import Modal from '../../Modal/Modal'
 import ModalBody from '../../Modal/ModalBody'
+import PhoneBlock from '../../PhoneBlock/PhoneBlock'
 import ArticleBlock from './components/ArticleBlock'
 import BrandsSlider from './components/BrandsSlider'
 import CatalogBlock from './components/CatalogBlock'
@@ -36,6 +37,7 @@ function Mainpage() {
 
     return (
         <>
+            <PhoneBlock />
             <MainBlock click={e => setModal(true)} />
             <ReviewsBlock />
             <CatalogBlock title='Каталог товаров' />

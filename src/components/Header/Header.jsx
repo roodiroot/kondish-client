@@ -33,8 +33,8 @@ function Header({ click, userReducer, bascetReducer }) {
             activeMobilMenu={activeMobilMenu}
           />
           <div className="header__navigate navigatePanel">
-            <div className="navigatePanel__number">8 915 329-42-09</div>
-            <Button onClick={click} type="sm">
+            <a href="tel:89153294209" className="navigatePanel__number">8 915 329-42-09</a>
+            <Button style={{ zIndex: "1" }} onClick={click} type="sm">
               Обратная связь
             </Button>
           </div>

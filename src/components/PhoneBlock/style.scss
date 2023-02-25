@@ -1,0 +1,56 @@
+.phoneBlock {
+    display: none;
+
+   @media (max-width: 450px) {
+    overflow: hidden;
+    position: relative;
+    padding: 2rem;
+    background: #fff3e1;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 1rem;
+    svg {
+        width: 3rem;
+    }
+    &__icon {
+        margin-right: 1.5rem;
+    }
+    &__textBlock {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+
+    }
+    &__title {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 1em;
+        letter-spacing: 0.03em;
+        color: #BCBCBC;     
+        @media (max-width: 340px) {
+            font-size: 1rem;
+        }   
+    }
+    &__number {
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 1em;
+        /* identical to box height */
+        
+        letter-spacing: 0.04em;
+        
+        color: #FFA921;
+
+        @media (max-width: 363px) {
+            font-size: 1.8rem;
+        }
+        @media (max-width: 340px) {
+            font-size: 1.5rem;
+        }
+    }
+   }
+}

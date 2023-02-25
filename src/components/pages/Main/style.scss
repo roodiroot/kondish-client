@@ -83,6 +83,15 @@
       border-radius: 50%;
       background: #ffa921;
     }
+
+    h2 {
+      @media (max-width: 430px) {
+        font-size: 1.5rem;
+      }
+      @media (max-width: 380px) {
+        font-size: 1.2rem;
+      }
+    }
   }
 
   /* .mainPage__bottomRow */
@@ -158,6 +167,13 @@
     @media (max-width: 500px) {
       margin-bottom: 4rem;
     }
+    @media (max-width: 430px) {
+      font-size: 2rem;
+    }
+    @media (max-width: 380px) {
+      font-size: 1.6rem;
+    }
+
   }
 
   /* .titlePres__list */

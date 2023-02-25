@@ -11,7 +11,7 @@ function MainBlock({ click }) {
       <div className="mainPage__topRow">
         <div className="mainPage__descript">
           <div className="mainPage__title titlePres">
-            <h1>Установка сплит-системы в Москве и Московской области</h1>
+            <h1>Установка сплит-систем в Москве и Московской области</h1>
             <ul className="titlePres__list">
               <li className="titlePres__elem1 ">
                 <div className="titlePres__body">
@@ -46,7 +46,7 @@ function MainBlock({ click }) {
                     <SVGCombine gar />
                   </div>
                   <div className="titlePres__title">Гарантия</div>
-                  <div className="titlePres__subtitle">100%</div>
+                  <div className="titlePres__subtitle">от 1 года</div>
                 </div>
               </li>
             </ul>
