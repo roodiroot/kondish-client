@@ -1,180 +1,191 @@
 .service {
-    overflow: hidden;
+  overflow: hidden;
 
-    position: relative;
-    padding: 3rem 2rem;
-    // border: 1px solid #DDE3EB;
-    background: #FFF3E1;
-    border-radius: 20px;
+  position: relative;
+  padding: 3rem 2rem;
+  // border: 1px solid #DDE3EB;
+  background: linear-gradient(
+    121.36deg,
+    #5f5f5f 21.81%,
+    rgb(255 192 96 / 98%) 72.61%
+  );
+  border-radius: 20px;
+  box-shadow: 3px 3px 18px rgba(0, 0, 0, 0.09);
 
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
 
-    /* .service__blockHeader */
+  /* .service__blockHeader */
 
-    &__blockHeader {
-        margin-bottom: 2.3rem;
+  &__blockHeader {
+    margin-bottom: 2.3rem;
+  }
+
+  /* .service__body */
+
+  &__body {
+  }
+
+  /* .service__table */
+
+  &__table {
+    width: 100%;
+    border-bottom: 1px solid #dde3eb;
+
+    margin-bottom: 2.3rem;
+    @media (max-width: 470px) {
+      font-size: 0.9rem;
     }
-
-    /* .service__body */
-
-    &__body {
+    @media (max-width: 420px) {
+      font-size: 0.8rem;
     }
+    // @media (max-width: 370px) {
+    //     font-size: .6rem;
+    // }
+  }
+  &__table.twoColumn {
+    width: 100%;
+    max-width: 900px;
+  }
 
-    /* .service__table */
+  /* .service__rowHeader */
 
-    &__table {
-        width: 100%;
-        border-bottom: 1px solid #DDE3EB;
+  &__rowHeader {
+    font-weight: 500;
+    line-height: 1.25rem;
+    color: #bcbcbc;
+  }
 
-        margin-bottom: 2.3rem;
-        @media (max-width: 470px) {
-            font-size: .9rem;
-        }
-        @media (max-width: 420px) {
-            font-size: .8rem;
-        }
-        // @media (max-width: 370px) {
-        //     font-size: .6rem;
-        // }
+  /* .service__header */
+
+  &__header {
+    padding: 0.45rem 1rem;
+    text-align: left;
+    &:nth-child(2) {
+      text-align: right;
     }
-    &__table.twoColumn {
-        width: 100%;
-        max-width: 900px;
+    &:nth-child(3) {
+      text-align: right;
     }
+  }
 
-    /* .service__rowHeader */
+  /* .service__row */
 
-    &__rowHeader {
-        font-weight: 500;
-        line-height: 1.25rem;
-        color: #BCBCBC;
+  &__row {
+    font-weight: 500;
+    line-height: 1.25rem;
+    color: #000000;
+
+    &:nth-child(even) {
+      background: #f9f9f9;
     }
+  }
 
-    /* .service__header */
+  /* .service__section */
 
-    &__header {
-        padding: .45rem 1rem;
-        text-align: left;
-        &:nth-child(2) {
-            text-align: right;
-        }
-        &:nth-child(3) {
-            text-align: right;
-        }
+  &__section {
+    padding: 0.84rem 1rem;
+    text-align: left;
+    &:nth-child(2) {
+      text-align: right;
     }
-
-    /* .service__row */
-
-    &__row {
-        font-weight: 500;
-        line-height: 1.25rem;
-        color: #000000;
-
-        &:nth-child(even){
-            background: #F9F9F9;
-        }
+    &:nth-child(3) {
+      text-align: right;
     }
+  }
 
-    /* .service__section */
-
-    &__section {
-        padding: 0.84rem 1rem;
-        text-align: left;
-        &:nth-child(2) {
-            text-align: right;
-        }
-        &:nth-child(3) {
-            text-align: right;
-        }
-    }
-
-    &__button {
-        max-width: 350px;
-    }
+  &__button {
+    max-width: 350px;
+  }
 }
 .working {
-    overflow: hidden;
+  overflow: hidden;
 
-    position: relative;
-    padding: 3rem 2rem;
-    // border: 1px solid #DDE3EB;
-    background: #FFF3E1;
-    border-radius: 20px;
+  position: relative;
+  padding: 3rem 2rem;
+  // border: 1px solid #DDE3EB;
 
-    /* .working__blockHeader */
+  border-radius: 20px;
+  background: linear-gradient(
+    121.36deg,
+    #5f5f5f 21.81%,
+    rgb(255 192 96 / 98%) 72.61%
+  );
+  box-shadow: 3px 3px 18px rgba(0, 0, 0, 0.09);
 
-    &__blockHeader {
-        margin-bottom: 1.5rem;
+  /* .working__blockHeader */
+
+  &__blockHeader {
+    margin-bottom: 1.5rem;
+  }
+
+  /* .working__topLine */
+
+  &__topLine {
+    display: flex;
+    gap: 1.5rem;
+
+    @media (max-width: 750px) {
+      flex-direction: column;
     }
+  }
 
-    /* .working__topLine */
+  /* .working__block */
 
-    &__topLine {
-        display: flex;
-        gap: 1.5rem;
+  &__block {
+    flex: 1 1 auto;
+    margin-bottom: 2rem;
+    padding-bottom: 1.3rem;
 
-        @media (max-width: 750px) {
-            flex-direction: column;
-        }
-    }
+    border-bottom: 1px solid #ffffff;
+  }
 
-    /* .working__block */
+  /* .working__blockTitle */
 
-    &__block {
-        flex: 1 1 auto;
-        margin-bottom: 2rem;
-        padding-bottom: 1.3rem;
+  &__blockTitle {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #ffffff;
 
-        border-bottom: 1px solid #DDE3EB;
-    }
+    padding: 0.5rem 0 0.1rem;
+  }
 
-    /* .working__blockTitle */
+  /* .working__text */
 
-    &__blockTitle {
-        font-weight: 500;
-        font-size: 1rem;
-        line-height: 1.25rem;
-        color: #BCBCBC;
+  &__text {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #000000;
 
-        padding: .5rem 0 .1rem;
-    }
+    padding: 1rem 0;
+  }
 
-    /* .working__text */
+  /* .working__bottomLIne */
 
-    &__text {
-        font-weight: 500;
-        font-size: 1rem;
-        line-height: 1.25rem;
-        color: #000000;
+  &__bottomLIne {
+  }
 
-        padding: 1rem 0;
-    }
+  /* .working__block2 */
 
-    /* .working__bottomLIne */
+  &__block2 {
+  }
 
-    &__bottomLIne {
-    }
+  /* .working__descriptionRow */
 
-    /* .working__block2 */
+  &__descriptionRow {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom: 2.1rem;
+  }
 
-    &__block2 {
-    }
+  /* .working__description */
 
-    /* .working__descriptionRow */
-
-    &__descriptionRow {
-        display: flex;
-        align-items: center;
-        gap: 1.2rem;
-        margin-bottom: 2.1rem;
-    }
-
-    /* .working__description */
-
-    &__description {
-        font-weight: 600;
-        font-size: 1.25rem;
-        line-height: 1.5rem;
-        color: #000000;
-    }
+  &__description {
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: #000000;
+  }
 }

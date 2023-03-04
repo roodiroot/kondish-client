@@ -1,125 +1,124 @@
 .articl {
-    overflow: hidden;
+  overflow: hidden;
 
-    position: relative;
-    padding: 3rem 2rem;
-    border: 1px solid #DDE3EB;
-    background: #fff;
-    border-radius: 20px;
+  position: relative;
+  padding: 3rem 2rem;
+  border: 1px solid #dde3eb;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 3px 3px 18px rgba(0, 0, 0, 0.09);
+  margin-bottom: 3rem;
+  /* .articl__back */
 
-    margin-bottom: 3rem;
-    /* .articl__back */
+  &__back {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0 1.3rem;
 
-    &__back {
-        display: flex;
-        justify-content: space-between;
-        padding: .5rem 0 1.3rem;
-
-        .articl__back1, .articl__back2{
-            cursor: pointer;
-            font-weight: 500;
-            font-size: 0.875rem;
-            letter-spacing: 0.05em;
-        }
-        .articl__back1 {
-            text-transform: uppercase;
-            color: #FFA921;
-                    
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-        .articl__back2{
-            text-transform: lowercase;
-            color: #afafaf;
-            text-decoration: underline;
-        }
-
+    .articl__back1,
+    .articl__back2 {
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 0.875rem;
+      letter-spacing: 0.05em;
     }
+    .articl__back1 {
+      text-transform: uppercase;
+      color: #ffa921;
 
-    /* .articl__body */
-
-    &__body {
+      &:hover {
+        text-decoration: underline;
+      }
     }
-
-    /* .articl__topLIne */
-
-    &__topLIne {
-        display: flex;
-        gap: 1rem;
-        
-        margin-bottom: 1.5rem;
-
-        @media (max-width: 850px) {
-            flex-direction: column;
-        }
+    .articl__back2 {
+      text-transform: lowercase;
+      color: #afafaf;
+      text-decoration: underline;
     }
+  }
 
-    /* .articl__text */
+  /* .articl__body */
 
-    &__text {
-        flex: 1 1 50%;
-        padding: 0.5rem .5rem .5rem 0;
+  &__body {
+  }
+
+  /* .articl__topLIne */
+
+  &__topLIne {
+    display: flex;
+    gap: 1rem;
+
+    margin-bottom: 1.5rem;
+
+    @media (max-width: 850px) {
+      flex-direction: column;
     }
+  }
 
-    /* .articl__title */
+  /* .articl__text */
 
-    &__title {
-        font-weight: 600;
-        font-size: 1.35rem;
-        line-height: 128%;
-        letter-spacing: 0.02em;
-        color: #171717;
+  &__text {
+    flex: 1 1 50%;
+    padding: 0.5rem 0.5rem 0.5rem 0;
+  }
 
-        margin-bottom: 1rem;
+  /* .articl__title */
+
+  &__title {
+    font-weight: 600;
+    font-size: 1.35rem;
+    line-height: 128%;
+    letter-spacing: 0.02em;
+    color: #171717;
+
+    margin-bottom: 1rem;
+  }
+
+  /* .articl__date */
+
+  &__date {
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 120%;
+    letter-spacing: 0.015em;
+    color: #bcbcbc;
+
+    margin-bottom: 1rem;
+  }
+
+  /* .articl__description */
+
+  &__description {
+    font-weight: 500;
+    line-height: 175%;
+    letter-spacing: 0.005em;
+    color: #171717;
+  }
+
+  /* .articl__paragraf */
+
+  &__paragraf {
+    margin-bottom: 1rem;
+  }
+
+  /* .articl__media */
+
+  &__media {
+    flex: 1 1 50%;
+    // max-height: 350px;
+    padding: 0.5rem 0 0.5rem 0.5rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+      border-radius: 10px;
     }
+  }
 
-    /* .articl__date */
+  /* .articl__bottomLine */
 
-    &__date {
-        font-weight: 500;
-        font-size: 1.1rem;
-        line-height: 120%;
-        letter-spacing: 0.015em;
-        color: #BCBCBC;
-
-        margin-bottom: 1rem;
-    }
-
-    /* .articl__description */
-
-    &__description {
-        font-weight: 500;
-        line-height: 175%;
-        letter-spacing: 0.005em;
-        color: #171717;
-    }
-
-    /* .articl__paragraf */
-
-    &__paragraf {
-        margin-bottom: 1rem;
-    }
-
-    /* .articl__media */
-
-    &__media {
-        flex: 1 1 50%;
-        // max-height: 350px;
-        padding: 0.5rem 0 .5rem .5rem;
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-
-            border-radius: 10px;
-
-        }
-    }
-
-    /* .articl__bottomLine */
-
-    &__bottomLine {
-    }
+  &__bottomLine {
+  }
 }

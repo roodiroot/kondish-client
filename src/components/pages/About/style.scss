@@ -1,77 +1,75 @@
 .about {
+  overflow: hidden;
+
+  position: relative;
+  padding: 3rem 2rem;
+  border: 1px solid #dde3eb;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 3px 3px 18px rgba(0, 0, 0, 0.09);
+
+  margin-bottom: 3rem;
+
+  /* .about__blockHeader */
+
+  &__blockHeader {
+  }
+
+  /* .about__body */
+
+  &__body {
+    display: flex;
+    gap: 1rem;
+
+    @media (max-width: 900px) {
+      flex-direction: column;
+    }
+  }
+
+  /* .about__textBlock */
+
+  &__textBlock {
+    flex: 1 1 50%;
+    padding-right: 1rem;
+  }
+
+  /* .about__text */
+
+  &__text {
+    font-size: 1.1rem;
+    line-height: 155.5%;
+    letter-spacing: 0.025em;
+    color: #171717;
+    margin-bottom: 1rem;
+    p {
+      margin-bottom: 0.75rem;
+    }
+  }
+
+  /* .about__social */
+
+  &__social {
+    justify-content: flex-start;
+    .socialBlockFooter__list {
+      .dz {
+        color: #191919;
+      }
+    }
+  }
+
+  /* .about__mediaBlock */
+
+  &__mediaBlock {
+    flex: 1 1 50%;
+    max-height: 400px;
+    height: 100%;
+    border-radius: 20px;
     overflow: hidden;
 
-    position: relative;
-    padding: 3rem 2rem;
-    border: 1px solid #DDE3EB;
-    background: #fff;
-    border-radius: 20px;
-
-    margin-bottom: 3rem;
-
-
-    /* .about__blockHeader */
-
-    &__blockHeader {
-
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
-
-    /* .about__body */
-
-    &__body {
-        display: flex;
-        gap: 1rem;
-
-        @media (max-width: 900px) {
-            flex-direction: column;
-        }
-    }
-
-    /* .about__textBlock */
-
-    &__textBlock {
-        flex: 1 1 50%;
-        padding-right: 1rem;
-    }
-
-    /* .about__text */
-
-    &__text {
-        font-size: 1.1rem;
-        line-height: 155.5%;
-        letter-spacing: 0.025em;
-        color: #171717;
-        margin-bottom: 1rem;
-        p {
-            margin-bottom: 0.75rem;
-        }
-    }
-
-    /* .about__social */
-
-    &__social {
-        justify-content: flex-start;
-        .socialBlockFooter__list {
-            
-            .dz {
-                color: #191919;
-            }
-        }
-    }
-
-    /* .about__mediaBlock */
-
-    &__mediaBlock {
-        flex: 1 1 50%;
-        max-height: 400px;
-        height: 100%;
-        border-radius: 20px;
-        overflow: hidden;
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    }
+  }
 }

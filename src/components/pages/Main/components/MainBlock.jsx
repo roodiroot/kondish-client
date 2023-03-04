@@ -11,7 +11,7 @@ function MainBlock({ click }) {
       <div className="mainPage__topRow">
         <div className="mainPage__descript">
           <div className="mainPage__title titlePres">
-            <h1>Установка сплит-систем в Москве и Московской области</h1>
+            <h1>Установка кондиционеров в Москве и Московской области</h1>
             <ul className="titlePres__list">
               <li className="titlePres__elem1 ">
                 <div className="titlePres__body">
@@ -53,13 +53,13 @@ function MainBlock({ click }) {
           </div>
           <ul className="mainPage__list">
             <li className="mainPage__desc">
-              <h2>Опыт более 10 лет.</h2>
+              <h2>Работа от 10 000 ₽</h2>
             </li>
             <li className="mainPage__desc">
-              <h2>Установка в день заказа.</h2>
+              <h2>Устанавливаем кондиционеры с 2012 г.</h2>
             </li>
             <li className="mainPage__desc">
-              <h2>Объекты любой сложности.</h2>
+              <h2>Выезжаем в день заказа.</h2>
             </li>
           </ul>
         </div>

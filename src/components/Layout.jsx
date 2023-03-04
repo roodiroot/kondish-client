@@ -20,7 +20,7 @@ function Layout() {
   const [modal, setModal] = useState(false);
   const [name, setName] = useState("");
   const [number, setNumber] = useState("");
-  const [personal, setPersonal] = useState(false);
+  const [personal, setPersonal] = useState(true);
 
   const inputArray = [
     { name: "Имя*", func: [name, setName] },

@@ -47,11 +47,7 @@ function Contactspage() {
         <div className="contacts__contactsBlock">
           <div className="contacts__infoBlock">
             <div className="contacts_info">
-              <RowContacts
-                tel
-                name="Номер телефона:"
-                value="+7 915 329 42 09"
-              />
+              <RowContacts tel name="Номер телефона:" value="8 915 329 42 09" />
               <RowContacts name="E-mail:" value="info@kondish.su" />
               <RowContacts
                 name="Адрес сервисного цента:"

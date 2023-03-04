@@ -6,11 +6,13 @@ import { notificationSlice } from "../../../store/reducers/NotificationSlice";
 import Modal from "../../Modal/Modal";
 import ModalBody from "../../Modal/ModalBody";
 import PhoneBlock from "../../PhoneBlock/PhoneBlock";
+import AdvantagesBlock from "./components/advantages/AdvantagesBlock";
 import ArticleBlock from "./components/ArticleBlock";
 import BrandsSlider from "./components/BrandsSlider";
 import CatalogBlock from "./components/CatalogBlock";
 import FeedbackBlock from "./components/FeedbackBlock";
 import MainBlock from "./components/MainBlock";
+import PhotoBlock from "./components/photo-block/PhotoBlock";
 import ReviewsBlock from "./components/ReviewsBlock";
 import "./style.scss";
 
@@ -20,7 +22,7 @@ function Mainpage() {
   const [modal, setModal] = useState(false);
   const [name, setName] = useState("");
   const [number, setNumber] = useState("");
-  const [personal, setPersonal] = useState(false);
+  const [personal, setPersonal] = useState(true);
 
   const inputArray = [
     { name: "Имя*", func: [name, setName] },
@@ -52,8 +54,10 @@ function Mainpage() {
     <>
       <PhoneBlock />
       <MainBlock click={(e) => setModal(true)} />
+      <AdvantagesBlock />
+      <PhotoBlock />
       <ReviewsBlock />
-      <CatalogBlock title="Каталог товаров" />
+      <CatalogBlock title="Хиты продаж" />
       <ArticleBlock />
       <BrandsSlider />
       <FeedbackBlock />

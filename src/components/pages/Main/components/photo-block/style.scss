@@ -1,0 +1,42 @@
+.photoBlock {
+  overflow: hidden;
+
+  position: relative;
+  padding: 3rem 2rem;
+  //   border: 1px solid #dde3eb;
+  border-radius: 20px;
+  background: #fff;
+
+  margin-bottom: 3rem;
+  box-shadow: 3px 3px 18px rgba(0, 0, 0, 0.09);
+
+  &__body {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    gap: 1rem;
+
+    @media (max-width: 999px) {
+      flex-direction: column;
+    }
+  }
+  &__mcolumn {
+    flex: 1 1 50%;
+    display: flex;
+    gap: 1rem;
+    @media (max-width: 450px) {
+      flex-direction: column;
+    }
+    // flex-direction: column;
+    // justify-content: flex-start;
+  }
+  &__column {
+    flex: 1 1 50%;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+}

@@ -4,12 +4,17 @@
 
   position: relative;
   padding: 3rem 2rem;
-  background: #fff3e1;
+  background: linear-gradient(
+    121.36deg,
+    #fff3e1 21.81%,
+    rgba(255, 243, 225, 0) 72.61%
+  );
   border-radius: 20px;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-shadow: 3px 3px 18px rgba(0, 0, 0, 0.09);
 
   margin-bottom: 4rem;
 
@@ -173,7 +178,6 @@
     @media (max-width: 380px) {
       font-size: 1.6rem;
     }
-
   }
 
   /* .titlePres__list */
@@ -326,6 +330,7 @@
   border: 1px solid #dde3eb;
   border-radius: 20px;
   background: #fff;
+  box-shadow: 3px 3px 18px rgba(0, 0, 0, 0.09);
 
   margin-bottom: 3rem;
 
@@ -498,6 +503,7 @@
   padding: 3rem 2rem;
   border: 1px solid #dde3eb;
   border-radius: 20px;
+  box-shadow: 3px 3px 18px rgba(0, 0, 0, 0.09);
 
   margin-bottom: 4rem;
 
@@ -528,6 +534,7 @@
   // border: 1px solid #DDE3EB;
   background: #717171;
   border-radius: 20px;
+  box-shadow: 3px 3px 18px rgba(0, 0, 0, 0.09);
 
   // margin-bottom: 3rem;
 

@@ -62,12 +62,12 @@ function Servicepage() {
               <tr className="service__row">
                 <td className="service__section">Монтаж до 5м.</td>
                 <td className="service__section">07-09</td>
-                <td className="service__section">15 000 ₽</td>
+                <td className="service__section">13 000 ₽</td>
               </tr>
               <tr className="service__row">
                 <td className="service__section">Монтаж до 5м.</td>
                 <td className="service__section">12</td>
-                <td className="service__section">16 000 ₽</td>
+                <td className="service__section">14 000 ₽</td>
               </tr>
               <tr className="service__row">
                 <td className="service__section">Монтаж до 5м.</td>
