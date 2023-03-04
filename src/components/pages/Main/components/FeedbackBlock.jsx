@@ -18,6 +18,7 @@ function FeedbackBlock() {
     const TOTAL = `Обратная связь с сайта Имя: ${name} Номер телефона: ${number} отправлено из формы обратной связи`;
     sendMessageAPI(TOTAL).then((d) => {
       dispatch(notificationSlice.actions.dindon("Ожидайте звонка..."));
+      window.ym(92593100, "reachGoal", "target");
     });
     setName("");
     setNumber("");

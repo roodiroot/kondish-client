@@ -21,8 +21,8 @@ function MainBlock({ click }) {
                   <div className="titlePres__iconBlock">
                     <SVGCombine kons />
                   </div>
-                  <div className="titlePres__title">Консультация</div>
-                  <div className="titlePres__subtitle">Бесплатно</div>
+                  <div className="titlePres__title">Гарантия</div>
+                  <div className="titlePres__subtitle">от 3 лет</div>
                 </div>
               </li>
               <li className="titlePres__elem2">
@@ -33,7 +33,7 @@ function MainBlock({ click }) {
                   <div className="titlePres__iconBlock">
                     <SVGCombine zam />
                   </div>
-                  <div className="titlePres__title">Замер</div>
+                  <div className="titlePres__title">Консультация</div>
                   <div className="titlePres__subtitle">Бесплатно</div>
                 </div>
               </li>
@@ -45,21 +45,21 @@ function MainBlock({ click }) {
                   <div className="titlePres__iconBlock">
                     <SVGCombine gar />
                   </div>
-                  <div className="titlePres__title">Гарантия</div>
-                  <div className="titlePres__subtitle">от 1 года</div>
+                  <div className="titlePres__title">Выезд</div>
+                  <div className="titlePres__subtitle">Бесплатно</div>
                 </div>
               </li>
             </ul>
           </div>
           <ul className="mainPage__list">
             <li className="mainPage__desc">
-              <h2>Монтаж систем с проектом.</h2>
+              <h2>Опыт более 10 лет.</h2>
             </li>
             <li className="mainPage__desc">
-              <h2>Подбор сплит-систем.</h2>
+              <h2>Установка в день заказа.</h2>
             </li>
             <li className="mainPage__desc">
-              <h2>Работа строго по проектной документации.</h2>
+              <h2>Объекты любой сложности.</h2>
             </li>
           </ul>
         </div>

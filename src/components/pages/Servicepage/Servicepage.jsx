@@ -34,6 +34,7 @@ function Servicepage() {
     const TOTAL = `Обратная связь с сайта Имя: ${name} Номер телефона: ${number} отправлено со страницы ${pathname}`;
     sendMessageAPI(TOTAL).then((d) => {
       dispatch(notificationSlice.actions.dindon("Ожидайте звонка..."));
+      window.ym(92593100, "reachGoal", "target");
     });
     setName("");
     setNumber("");
