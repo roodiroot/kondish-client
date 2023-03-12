@@ -1,19 +1,18 @@
 import { useState } from "react";
+import classNames from "classnames";
+import { useDispatch } from "react-redux";
+import { Link, NavLink } from "react-router-dom";
 
 import Burger from "../Burger/Burger";
 import Button from "../Button/Button";
 import IconBascet from "../utils.components/IconBascet/IconBascet";
 import Logo from "../utils.components/Logo";
-import "./style.scss";
-
 import MenuHeader from "../MenuHeader/MenuHeader";
 import SVGCombine from "../SVG/SVGCombine/SVGCombine";
-import { useDispatch } from "react-redux";
 import SWGWrapper from "../utils.components/SWGWrapper/SWGWrapper";
 import { userSlice } from "../../store/reducers/UserSlice";
-import { Link, NavLink } from "react-router-dom";
-import classNames from "classnames";
 import useWindowScroll from "../../models/useWindowScroll";
+import "./style.scss";
 
 function Header({ click, userReducer, bascetReducer }) {
   const scroll = useWindowScroll();

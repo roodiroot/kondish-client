@@ -2,7 +2,6 @@ import classNames from "classnames";
 import "./style.scss";
 
 function Modal({ active, setactive, children, minWidth }) {
-  console.log(active);
   if (active) {
     document.body.classList.add("--lock");
   } else {
