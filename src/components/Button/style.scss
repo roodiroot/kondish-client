@@ -1,52 +1,79 @@
 //КНОПКИ
-.buttonMainSmall, .buttonMain, .buttonMainText {
+.buttonMainSmall,
+.buttonMain,
+.buttonMainText {
+  position: relative;
+  cursor: pointer;
+  border-radius: 0.625rem;
 
-    cursor: pointer;
-    border-radius: .625rem;
+  padding: 3px 1.9rem;
 
-    padding: 3px 1.9rem;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.015em;
+  text-align: center;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
 
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: .8rem;
-    letter-spacing: 0.015em;
-    text-align: center;
-    color: #FFFFFF;
-    white-space: nowrap;
-    overflow: hidden;
-
-    transition: all .2s linear;
+  transition: all 0.2s linear;
 }
 .buttonMainSmall {
-    background: linear-gradient(155.68deg, #FFA921 1.42%, #F8D296 130.92%);
-    text-transform: uppercase; 
-    height: 40px;
-    line-height: 34px;
+  background: linear-gradient(155.68deg, #ffa921 1.42%, #f8d296 130.92%);
+  text-transform: uppercase;
+  height: 40px;
+  line-height: 34px;
 }
 .buttonMain {
-    background: #FFA921;
-    font-size: 1.25rem;
-    height: 3.75rem;
-    line-height: 3.375rem;
+  background: #ffa921;
+  font-size: 1.25rem;
+  height: 3.2rem;
+  line-height: 2.7rem;
 
-    &.noBg {
-        color: #FFA921;
-        background: unset;
-        border: 2px solid #FFA921;
+  border-radius: 1.6rem;
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   width: 0;
+  //   height: 100%;
+  //   top: 0;
+  //   left: 0;
+  //   background: #ffaa2191;
+
+  //   transition: all linear 0.2s;
+  // }
+
+  &:hover {
+    color: #ffffff;
+    background: #2b2c33;
+    // &::after {
+    //   width: 100%;
+    // }
+  }
+
+  &.noBg {
+    color: #ffa921;
+    background: unset;
+    border: 2px solid #ffa921;
+    &:hover {
+      color: #2b2c33;
+      border: 2px solid #2b2c33;
     }
+  }
 }
 .buttonMainText {
-    height: 3.75rem;
+  height: 3.75rem;
 
-    font-weight: 500;
-    font-size: 0.875rem;
-    line-height: 3.375rem;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: #FFA921;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 3.375rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffa921;
 
-    &:hover {
-        text-decoration: underline;
-    }
+  &:hover {
+    text-decoration: underline;
+  }
 }

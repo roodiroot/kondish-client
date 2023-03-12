@@ -4,6 +4,12 @@ import { constantLinks } from "../../constanse";
 import LinkMenu from "../Header/LinkMenu";
 
 function MenuHeader({ activeMobilMenu, setActiveMobilMenu }) {
+  if (activeMobilMenu) {
+    document.body.classList.add("--lock");
+  } else {
+    document.body.classList.remove("--lock");
+  }
+
   return (
     <div className={classNames(activeMobilMenu && "active", "menuList")}>
       <ul className="menuList__list">

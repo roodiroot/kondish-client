@@ -1,23 +1,191 @@
 .header {
   width: 100%;
   font-size: 1rem;
-  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.05);
-  background: #ffffff;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+  background: #2b2c33;
 
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
+
+  transition: all cubic-bezier(0.4, 0, 1, 1) 0.3s;
+
+  &.minHeader {
+    top: -35px;
+  }
   /* .header__container */
 
-  &__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    @media (max-width: 1000px) {
-      padding: 1rem 1rem;
+  &__bg {
+    display: none;
+    @media (max-width: 970px) {
+      display: block;
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      background: inherit;
+      z-index: 1;
+      box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
     }
   }
+
+  &__container {
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  // ВЕРХНИЙ РЯД ХЕДЕРА
+
+  &__topRow {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: 1px solid rgba(217, 217, 217, 0.09);
+  }
+  &__favorites {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 9px 0;
+
+    span {
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 12px;
+      color: rgba(223, 223, 223, 0.63);
+      margin-left: 15px;
+
+      text-transform: uppercase;
+
+      @media (max-width: 500px) {
+        display: none;
+      }
+    }
+
+    path {
+      transition: all linear 0.2s;
+    }
+    &:hover {
+      path {
+        fill: #ffffff;
+      }
+    }
+  }
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+  }
+  &__socIcon {
+    color: #ffffff91;
+    opacity: 0.98;
+  }
+
+  // ОСНОВНОЙ РЯД
+
+  &__mainRow {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    border-bottom: 1px solid rgba(217, 217, 217, 0.09);
+    @media (max-width: 500px) {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+
+  &__mainInfoBlock {
+    display: flex;
+    align-items: center;
+    gap: 54px;
+    @media (max-width: 970px) {
+      gap: 20px;
+    }
+  }
+
+  &__infoButton {
+    display: flex;
+    gap: 15px;
+    svg {
+      width: 20px;
+    }
+  }
+  &__textBlockInfoButton {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 400;
+    /* identical to box height */
+
+    color: rgba(223, 223, 223, 0.63);
+
+    @media (max-width: 970px) {
+      display: none;
+    }
+  }
+  &__infoButton.phone {
+    path {
+      stroke: #ffffff;
+      stroke-width: 1px;
+    }
+  }
+
+  // НИЖНИЙ РЯД
+  &__bottomRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__billy,
+  &__work {
+    position: relative;
+    z-index: 2;
+    font-size: 10px;
+    line-height: 12px;
+
+    color: #dfdfdf;
+
+    padding: 10px 0;
+  }
+  &__billy {
+    text-transform: uppercase;
+    transition: all linear 0.2s;
+
+    &:hover {
+      color: #ffa921;
+    }
+
+    & .active {
+      color: #ffa921;
+    }
+    @media (max-width: 414px) {
+      display: none;
+    }
+  }
+
+  &__buttonBlock {
+    @media (max-width: 500px) {
+      display: none;
+    }
+  }
+
+  // ========================================================================
 
   &__rightBlock {
     display: flex;
@@ -34,16 +202,13 @@
   &__logo {
     position: relative;
     z-index: 1;
-    padding: 1rem 0;
-    @media (max-width: 1000px) {
-      padding: 0;
-    }
+    height: 31px;
   }
 
   /* .header__cart */
 
   &__cart {
-    margin-left: 0.5rem;
+    // margin-left: 0.5rem;
   }
 }
 
@@ -54,7 +219,7 @@
 
   &__list {
     display: flex;
-    gap: 0.3rem;
+    gap: 18px;
 
     align-items: center;
   }
@@ -63,7 +228,12 @@
 
   &__link {
     white-space: nowrap;
-    padding: 0.5rem;
+    padding: 8px;
+    font-size: 13px;
+    line-height: 16px;
+    /* identical to box height */
+
+    color: #b5b5b5;
     a {
       transition: all linear 0.2s;
       &.active {
@@ -75,16 +245,16 @@
     display: none;
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 970px) {
     position: absolute;
     z-index: 0;
     top: 0;
     right: -100%;
 
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     background: rgb(255, 255, 255);
-    padding: 90px 2rem;
+    padding: 164px 2rem;
 
     transition: all linear 0.2s;
 
@@ -103,11 +273,12 @@
     &__link {
       width: 100%;
       height: 100%;
-      font-size: 20px;
+      font-size: 18px;
+      color: #2b2c33;
 
       a {
         transition: all linear 0.2s;
-        padding: 20px 10px;
+        padding: 15px 10px;
         display: inline-block;
         width: 100%;
         height: 100%;

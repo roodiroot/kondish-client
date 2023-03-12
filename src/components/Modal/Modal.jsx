@@ -2,6 +2,12 @@ import classNames from "classnames";
 import "./style.scss";
 
 function Modal({ active, setactive, children, minWidth }) {
+  console.log(active);
+  if (active) {
+    document.body.classList.add("--lock");
+  } else {
+    document.body.classList.remove("--lock");
+  }
   return (
     <div
       className={classNames("modal", active && "active")}

@@ -9,6 +9,7 @@ import "swiper/css";
 import { fetchReviews } from "../../../../store/reducers/ActionCreators";
 import ReviewBlock from "../../../ReviewBlock/ReviewBlock";
 import SVGCombine from "../../../SVG/SVGCombine/SVGCombine";
+import gif from "../../../../assets/img/gif/arrow.gif";
 
 function ReviewsBlock() {
   const dispatch = useDispatch();
@@ -24,6 +25,9 @@ function ReviewsBlock() {
 
   return (
     <div className="reviews">
+      <div className="reviews__scroll">
+        <img src={gif} alt="" />
+      </div>
       <div className="reviews__blockHeader blockHeader">
         <div className="blockHeader__title">Отзывы</div>
         <div className="blockHeader__subtitle rewLink">
@@ -58,6 +62,7 @@ function ReviewsBlock() {
             ))}
         </Swiper>
       }
+      {/* <img src={gif} alt="" /> */}
     </div>
   );
 }
