@@ -53,7 +53,7 @@ function MainBlock({ click }) {
           </div>
           <ul className="mainPage__list">
             <li className="mainPage__desc">
-              <h2>Цена от 10 000 ₽</h2>
+              <h2>Стоимость установки от 5 000 ₽</h2>
             </li>
             <li className="mainPage__desc">
               <h2>Устанавливаем кондиционеры с 2012 г.</h2>

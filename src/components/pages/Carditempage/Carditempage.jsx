@@ -141,7 +141,7 @@ function Carditempage() {
                 <div className="descriptionCardItem__tableCardItem tableCardItem">
                   <div className="tableCardItem__title">описание</div>
                   <div className="tableCardItem__topBLock">
-                    {oneProduct?.pipe_length_max && (
+                    {oneProduct?.pipe_length_max > 0 && (
                       <DescriptRow
                         name="Макс. длина трубы:"
                         value={oneProduct?.pipe_length_max}

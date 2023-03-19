@@ -43,6 +43,7 @@ function ListProduct() {
             <td>Артикул</td>
             <td>Цена</td>
             <td>Инвертор</td>
+            <td>WiFi</td>
             <td>hit</td>
             <td></td>
           </tr>
@@ -59,7 +60,7 @@ function ListProduct() {
                   <UpdateRow id={l.id} name="compressor" value={l.compressor} />
                 </td>
                 <td style={{ maxWidth: "70px" }}>
-                  <UpdateRow id={l.id} name="hit" value={l.hit} />
+                  <UpdateRow id={l.id} name="WiFi" value={l.WiFi} />
                 </td>
                 <td>
                   <FuncTD drop={dropElement} id={l.id} />
